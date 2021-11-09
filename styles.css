@@ -1,0 +1,88 @@
+body {
+    background-color: lightblue;
+}
+header {
+    border-style: solid;
+    border-color: blueviolet;
+    padding: 10px;
+    margin: 20px;
+}
+main {
+    border-style: dotted;
+    border-color: tomato;
+    padding: 10px;
+    margin: 20px;
+}
+footer {
+    border-style: ridge;
+    border-color:dodgerblue;
+    padding: 10px;
+    margin: 20px;
+}
+.three {
+    color: red;
+    font-family: Georgia;
+}
+ol {
+    color: green;
+    font-size: 20px;
+}
+.four {
+    font-family: Calibri;
+    color: brown;
+    }
+.five {
+    background-color: lightgoldenrodyellow;
+    border: 5px solid green;
+}
+aside {
+    width: 20%;
+    padding-left: 10px;
+    margin-left: 10px;
+    float: right;
+    font-style: italic;
+    background-color: yellow;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+    li a {
+    float: left;
+  }
+    li a {
+    display: block;
+    padding: 10px;
+    background-color: lightgrey;
+  }
+
+  h1 {                                                                                 
+    font-size: 50px;                                                                 
+}                                                                                    
+/* The first media query. If the window has a minimum width of 768 pixels,
+ * this style will be used. If **not**, then this style will **not** be used. */
+@media (min-width: 320px) {                                                          
+    h1 {                                                                             
+        font-size: 60px;                                                             
+    }     
+}                       
+                                                                                   
+/* The second media query. Same goes here, except this time the window has
+ * to be at least 320 pixels for this style to be used.
+ * Notice that a window with a width of 800 pixels will satisfy the previous media query,
+ * but also satisfy this media query. This means that the size of h1 would be changed
+ * yet again. */
+@media (min-width: 1024px) {                                                          
+    h1 {                                                                             
+        font-size: 10px;                                                             
+    } 
+    body {
+        background-color: grey;
+    }
+    p{ 
+        color: green;
+        font-size: 20px;
+        line-height: 20%;
+}                          
